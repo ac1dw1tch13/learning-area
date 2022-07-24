@@ -58,6 +58,25 @@ drawCircle(x, y, size);
 
 // Add your code here
 
+
+canvas.addEventListener('keydown', event => {
+  if (event.code === 'KeyD') {
+  x +=5
+  }
+  
+  if (event.code === 'KeyA') {
+  x -= 5
+  }
+  if (event.code === 'KeyW') {
+  y -= 2
+  }if (event.code === 'KeyS') {
+  y += 5
+  }
+  
+  
+  drawCircle(x,y,size)
+  })
+
     </textarea>
 
     <div class="playable-buttons">
